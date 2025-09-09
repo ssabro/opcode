@@ -235,6 +235,17 @@ brew install pkg-config
 **Windows**
 - Install [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
 - Install [WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) (usually pre-installed on Windows 11)
+or
+```powershell
+# install
+winget install --id Microsoft.VisualStudio.2022.BuildTools -e
+winget install --id Microsoft.EdgeWebView2Runtime -e
+winget install --id Rustlang.Rust.MSVC -e
+
+# check
+cargo -V
+rustc -V
+```
 
 ### Build Steps
 
